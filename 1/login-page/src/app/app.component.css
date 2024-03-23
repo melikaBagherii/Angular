@@ -1,0 +1,21 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 30%;
+    padding: 30px;
+    margin-top: 170px;
+    background-color: rgba(128, 128, 128, 0.367);
+    border-radius: 10px;
+  }
+
+h1{
+    padding-bottom: 50px;
+}
+
+  
+button{
+  width: 50%;
+  margin-left: 25%;
+ }
+
