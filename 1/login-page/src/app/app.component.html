@@ -2,6 +2,6 @@
     <h1>Welcome!</h1>
     <app-myusername></app-myusername>
     <app-mypassword></app-mypassword>
-    <app-checkfield></app-checkfield>
+    <app-checkfield (onLoginClicked) = "check($event)"></app-checkfield>
     <!-- <button mat-flat-button color="primary">Login</button> -->
-</form>
+</form> 

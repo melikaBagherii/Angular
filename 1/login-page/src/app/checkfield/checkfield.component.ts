@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild,EventEmitter, Output   } from '@angular/core';
 
 @Component({
   selector: 'app-checkfield',
@@ -6,13 +6,13 @@ import { Component, ViewChild } from '@angular/core';
   styleUrl: './checkfield.component.css'
 })
 export class CheckfieldComponent {
-  check(inputValue){
-    let value = inputValue.value
-    if(value == '512388'){
-      alert('Valid User')
-    }
-    else{
-      alert('Invalid User')
-    }
+  checkValue = '';
+  @Output() onLoginClicked = new EventEmitter<{checkVal: string}>(); 
+
+
+  
+  check(){
+    // alert(this.checkValue)
+    this.onLoginClicked.emit({checkVal: this.checkValue});
   }
 }

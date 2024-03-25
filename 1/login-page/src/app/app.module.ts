@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { LoginbuttonComponent } from './loginbutton/loginbutton.component';
 import { CheckfieldComponent } from './checkfield/checkfield.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CheckfieldComponent } from './checkfield/checkfield.component';
     BrowserModule,
     AppRoutingModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
