@@ -1,7 +1,8 @@
 <mat-form-field class="example-full-width">
     <mat-label>Enter The Code</mat-label>
     <!-- <input matInput placeholder="" value="" #inputValue> -->
-    <input matInput placeholder="" value="" [(ngModel)] = "checkValue">
+    <!-- <input matInput placeholder="" value="" [(ngModel)] = "checkValue"> -->
+    <input matInput placeholder="" value="" [(ngModel)] = "checkValue" appNumericOnly>
 </mat-form-field>
 
 <!-- <button mat-flat-button color="primary" (click)="check(inputValue)">Login</button> -->

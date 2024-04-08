@@ -11,6 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { LoginbuttonComponent } from './loginbutton/loginbutton.component';
 import { CheckfieldComponent } from './checkfield/checkfield.component';
 import { FormsModule } from '@angular/forms';
+import { NumericOnlyDirective } from './numeric-only.directive';
+import { UsernameFormatDirective } from './username-format.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     MyusernameComponent,
     MypasswordComponent,
     LoginbuttonComponent,
-    CheckfieldComponent
+    CheckfieldComponent,
+    NumericOnlyDirective,
+    UsernameFormatDirective
   ],
   imports: [
     BrowserModule,
