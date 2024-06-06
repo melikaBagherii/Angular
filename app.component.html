@@ -1,0 +1,11 @@
+<header>
+  <h2 *ngIf="userStatus && username">{{username}} is Logged In</h2>
+  <h2 *ngIf="!userStatus && username">{{username}} is Logged Out</h2>
+</header>
+
+<body class="container">
+  <label for="">Username:</label>
+  <!-- <input type="text" [(ngModel)] = "username"> -->
+  <input #userNameInput type="text">
+  <button class="btn btn-primary" (click)="onLogin(userNameInput.value)">Am Logged In?</button>
+</body>
